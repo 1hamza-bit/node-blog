@@ -4,9 +4,9 @@ const mongoose = require('mongoose');
 const blogRoutes = require('./routes.js/blogRoutes');
 
 const app = express();
-const PORT = 3000;
+const PORT = 8000;
 
-mongoose.connect('mongodb+srv://hamtah112:<password>@cluster0.beufdgo.mongodb.net/', {
+mongoose.connect('mongodb+srv://hamtah112:MYfamily123.@cluster0.beufdgo.mongodb.net/api', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });

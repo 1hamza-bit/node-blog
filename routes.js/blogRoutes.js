@@ -21,10 +21,10 @@ const storage = new CloudinaryStorage({
   
 const upload = multer({ storage: storage });
 
-router.post('/',upload.single("image"), blogController.createPost);
-router.get('/', blogController.getPosts);
-router.get('/:id', blogController.getPostById);
-router.put('/:id', blogController.updatePost);
-router.delete('/:id', blogController.deletePost);
+router.post('/',upload.single("image"), blogController.postblogs);
+router.get('/', blogController.getblogs);
+router.get('/:id', blogController.getblog);
+// router.put('/:id', blogController.updatePost);
+// router.delete('/:id', blogController.deletePost);
 
 module.exports = router;
